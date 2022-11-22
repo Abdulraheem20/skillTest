@@ -1,62 +1,94 @@
-.container{
-    width: 80%;
-    display: block;
-    margin: 0 auto;
-    border: 1px solid grey;
-    height: 100%;
+.container {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid grey;
+  height: 100%;
 }
-.title{
-    background-color: aqua;
-    justify-content: center;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: x-large;
-    font-weight: bold;
-    color: darkgrey;
+.title {
+  background-color: aqua;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  color: darkgrey;
 }
-.date{
-    text-align: center;
+.date {
+  text-align: center;
 }
-.input{
-    width: 99%;
-    height: 50px;
-    border-radius: 30px;
-    background-color: aqua;
-    border: none;
-    text-indent: 20px;
-    font-size: large;
+.input {
+  width: 99%;
+  height: 50px;
+  border-radius: 30px;
+  background-color: aqua;
+  border: none;
+  text-indent: 20px;
+  font-size: large;
 }
-.btn{
-    position: absolute;
-    right: 64px;
-    margin-top: 1px;
-    border: none;
-    font-size: x-large;
-    color: darkgrey;
-    width: 50px;
-    text-align: center;
-    justify-content: center;
-    height: 50px;
-    border-radius: 50%;
-    background-color:bisque ;
-    cursor: pointer;
+.btn {
+  position: absolute;
+  right: 64px;
+  margin-top: 1px;
+  border: none;
+  font-size: x-large;
+  color: darkgrey;
+  width: 50px;
+  text-align: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 50%;
+  background-color: bisque;
+  cursor: pointer;
 }
-.list{
-    list-style-type: none;
-    /* background-color: bisque; */
-    border-radius: 10px;
-    /* width:auto; */
-    display: block;
-    align-items: right;
+.list {
+  align-items: right;
   justify-content: right;
   text-align: right;
-    /* align-content: flex-start; */
-
+  margin: 5px 10px;
 }
-.profIcon{
-    background-color:fuchsia;
-    margin: 0 5px;
+.profIcon {
+  background-color: fuchsia;
+  margin: 0 10px;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.content {
+  border-radius: 10px;
+  background-color: bisque;
+  width: auto;
+  margin: 10px;
+  padding: 10px;
+}
+.you small {
+  color: grey;
+}
+/* .contentContainer {
+} */
+
+.chatName{
+    font-size: large;
+    font-weight: bold;
+}
+.userName, .userEnter{
+    padding: 20px;
+    border: none;
+    background-color: grey;
     color: white;
-    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+border-radius: 5px;
+}
+.userEnter{
+    display: block;
+    background-color: aqua;
+}
+.loginCont{
+    /* justify-content: center; */
+    display: block;
+    margin: 0 auto;
+    /* align-self: center; */
 }

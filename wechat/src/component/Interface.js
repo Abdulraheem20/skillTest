@@ -5,7 +5,7 @@ import { CgProfile } from "react-icons/cg";
 
 const Interface = () => {
   const date = new Date();
-  const [input, setInput] = useState();
+  const [input, setInput] = useState('');
   const inputRef = useRef(null);
   const onclick = () => {
     setInput(inputRef.current.value);
@@ -27,10 +27,13 @@ const Interface = () => {
         <div className="listContainer">
         
           {chat.map((itr) => (
-            <span key={itr.id} className="list">
-              {itr.value}
-                <CgProfile className="profIcon"/>
-            </span>
+            <div key={itr.id} className="list">
+                <p className="you"><small>You</small></p>
+              <div className="contentContainer">
+              <span className="content">{itr.value}</span>
+                <span className="icon"><CgProfile className="profIcon"/></span>
+              </div>
+            </div>
           ))}
         </div>
         <form action="">
@@ -41,7 +44,7 @@ const Interface = () => {
               e.preventDefault();
               onclick();
               chatList();
-           
+              inputRef.current.value = ''
             }}
           >
             <FiSend />
