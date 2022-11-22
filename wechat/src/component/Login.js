@@ -18,8 +18,8 @@ const Login = () => {
         <input type="text" className="userName" />
         <button
           className="userEnter"
+          type="submit"
           onClick={(e) => {
-            e.preventDefault();
             onclick();
             navigate(`/chats`);
             inputRef.current.value = "";
